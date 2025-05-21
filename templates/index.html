@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cook With What You Have</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf2;
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #d35400;
+        }
+        form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #e67e22;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .recipe {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 75%;
+        }
+        .recipe h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .label {
+            font-weight: bold;
+            color: #8e44ad;
+        }
+        .ingredients {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 What Can I Cook?</h1>
+    <form method="POST">
+        <input type="text" name="ingredients" placeholder="e.g. onion, tomato, garlic" value="{{ request.form.ingredients }}">
+        <button type="submit">Suggest Dishes</button>
+    </form>
+
+    
+        {% if recipes %}
+            <h2 style="text-align:center;">Top Recipe Matches:</h2>
+            <div style="text-align:center; margin-bottom: 20px;">
+                <button onclick="sortByTime()">Sort by Shortest Time</button>
+            </div>
+        
+
+        {% for r in recipes %}
+            <div class="recipe">
+                <h3>{{ r.recipe_name }}</h3>
+                <p><span class="label">⭐ Rating:</span> {{ r.Rating }}</p>
+                <p class="label time">⏱️ Time: {{ r.total_time }}</p>
+                <p class="label">🧺 Ingredients:</p>
+                <div class="ingredients">{{ r.Ingredients|highlight(ingredient_list)|safe }}</div>
+
+                    <p class="label">📋 Steps:</p>
+                    <p>{{ r.Instructions|highlight(ingredient_list)|safe }}</p>
+
+            </div>
+        {% endfor %}
+    {% endif %}
+
+
+    <script>
+function timeToMins(str) {
+    str = str.toLowerCase();
+    let mins = 0;
+    const hrMatch = str.match(/(\d+)\s*hr/);
+    const minMatch = str.match(/(\d+)\s*min/);
+    if (hrMatch) mins += parseInt(hrMatch[1]) * 60;
+    if (minMatch) mins += parseInt(minMatch[1]);
+    return mins;
+}
+
+function sortByTime() {
+    const recipes = Array.from(document.querySelectorAll('.recipe'));
+    const container = recipes[0].parentNode;
+    recipes.sort((a, b) => {
+        const t1 = a.querySelector('.time').innerText;
+        const t2 = b.querySelector('.time').innerText;
+        return timeToMins(t1) - timeToMins(t2);
+    });
+    recipes.forEach(r => container.appendChild(r));
+}
+</script>
+
+</body>
+</html>
