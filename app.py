@@ -51,6 +51,9 @@ def index():
     ingredient_list = []
 
     if request.method == "POST":
+        if "clear" in request.form:
+            return render_template("index.html", recipes=[], ingredients="", ingredient_list=[])
+        
         ingredients = request.form.get("ingredients", "")
         ingredient_list = [i.strip().lower() for i in ingredients.split(",")]
         recipes = match_recipes(ingredients).to_dict(orient="records")

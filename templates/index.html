@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Cook With What You Have</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icon.png') }}">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,11 +61,37 @@
     </style>
 </head>
 <body>
+
+        <div style="text-align: center; margin-bottom: 10px;">
+        <span style="font-weight: bold;">
+            © <script>document.write(new Date().getFullYear());</script>
+        </span>
+        Made with ❤️ and passion by 
+        <a href="https://www.linkedin.com/in/narasimha31/" target="_blank" 
+            style="color: #0d78aa; font-weight: bold; text-decoration: none;">
+            Narasimha Royal
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" 
+                alt="LinkedIn" style="width: 16px; height: 16px; vertical-align: middle; margin-left: 1px; margin-top: -4px;">
+        </a>
+        </div>
+
+<p style="text-align: center; font-size: 2.3rem; color: #ffffff; margin-top: 100px;font-weight: bolder;background: linear-gradient(to right,#373af0,#2132ce,brown,#5b41a7,purple,violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent ;">
+  <img src="{{ url_for('static', filename='images/pan.png') }}" alt="pan icon" style="height: 45px;"> Got ingredients, but no idea what to cook? We’ll show you what’s possible!
+</p>
+
+
+
     <h1>🔍 What Can I Cook?</h1>
     <form method="POST">
-        <input type="text" name="ingredients" placeholder="e.g. onion, tomato, garlic" value="{{ request.form.ingredients }}">
-        <button type="submit">Suggest Dishes</button>
+        <input type="text" name="ingredients" id="ingredients" value="{{ ingredients }}" placeholder="e.g. onion, tomato, garlic, rice, oil" />
+  
+        <button type="submit" name="suggest">Suggest Dishes</button>
+        <button type="submit" name="clear" style="background-color: #73a1b6; color: #f1ebeb;">Clear</button>
     </form>
+
 
     
         {% if recipes %}
@@ -110,6 +138,13 @@ function sortByTime() {
     });
     recipes.forEach(r => container.appendChild(r));
 }
+</script>
+
+
+<script>
+  function clearInput() {
+    document.getElementById('ingredients').value = '';
+  }
 </script>
 
 </body>
