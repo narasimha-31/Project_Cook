@@ -74,7 +74,7 @@ Built using **Python**, **Flask**, **HTML/CSS**, and **JavaScript**, this recipe
 
 ## 🔗 Live Site Again
 
-👉 [Try the app here](PASTE_YOUR_LIVE_DEMO_LINK_HERE)
+👉 [Try the app here](https://projectcook.pythonanywhere.com/)
 
 ---
 
