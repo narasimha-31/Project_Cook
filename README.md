@@ -68,7 +68,7 @@ Built using **Python**, **Flask**, **HTML/CSS**, and **JavaScript**, this recipe
 
 ## 🖼️ Screenshot
 
-![Project UI]([static/images/Screenshot%202025-06-01%20135820.png]
+![Project UI](static/images/Screenshot%202025-06-01%20135820.png)
 
 ---
 
