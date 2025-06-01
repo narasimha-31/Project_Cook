@@ -81,4 +81,4 @@ Built using **Python**, **Flask**, **HTML/CSS**, and **JavaScript**, this recipe
 ## 📬 Contact
 
 Made with ❤️ and passion by **Narasimha Royal**  
-[LinkedIn](https://www.linkedin.com/in/narasimha-royal/) • [GitHub](https://github.com/narasimha-31)
+[LinkedIn](https://www.linkedin.com/in/narasimha31)
