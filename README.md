@@ -6,7 +6,7 @@ A smart recipe recommendation tool that helps you cook using ingredients already
 
 <hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
 
-### 🔗 Live Demo  
+###  Live Demo  
 👉 [Try the app here](https://projectcook.pythonanywhere.com/)
 
 <hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
