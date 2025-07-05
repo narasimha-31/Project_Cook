@@ -33,7 +33,7 @@ Built using **Python**, **Flask**, **HTML/CSS**, and **JavaScript**, this recipe
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
 | Tool         | Usage                         |
 |--------------|-------------------------------|
