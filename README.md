@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Overview
+## The Problem
 
 Ever opened your fridge and thought, *“What can I make with this?”*  
 This app solves that problem by helping users **instantly discover dishes** based on the ingredients they already have at home.
