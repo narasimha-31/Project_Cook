@@ -83,7 +83,7 @@ http://localhost:5000
 |-----------|
 | ![Home](static/images/Screenshot%202025-06-01%20135820.png) | 
 
-> 💡 Add more screenshots in `static/images/` as needed.
+
 
 <hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
 
