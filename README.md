@@ -79,9 +79,9 @@ http://localhost:5000
 
 ### 📸 Screenshots
 
-| Home Page | Results View |
-|-----------|--------------|
-| ![Home](static/images/home.png) | ![Results](static/images/results.png) |
+| Home Page | 
+|-----------|
+| ![Home](static/images/home.png) | 
 
 > 💡 Add more screenshots in `static/images/` as needed.
 
