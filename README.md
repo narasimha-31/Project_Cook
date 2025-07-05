@@ -89,5 +89,5 @@ http://localhost:5000
 
 ### 📬 Contact
 
-Made with ❤️ by **Narasimha Royal**  
+Made with ❤️ and passion by **Narasimha Royal**  
 [LinkedIn](https://www.linkedin.com/in/narasimha31)
