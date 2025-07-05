@@ -46,10 +46,10 @@ Built using **Python**, **Flask**, **HTML/CSS**, and **JavaScript**, this recipe
 
 ---
 
-## 🚀 Run Locally
+##  Run Locally ?
 
 1. Clone this repo  
-   `git clone https://github.com/your-username/cook-with-what-you-have.git`
+   `git clone https://github.com/narasimha-31/cook-with-what-you-have.git`
 
 2. Create a virtual environment  
    `python -m venv venv && source venv/bin/activate` (Linux/Mac)  
