@@ -72,3 +72,21 @@ python app.py
 
 # 5. Open in browser
 http://localhost:5000
+
+<hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
+
+### 📸 Screenshots
+
+| Home Page | Results View |
+|-----------|--------------|
+| ![Home](static/images/home.png) | ![Results](static/images/results.png) |
+
+> 💡 Add more screenshots in `static/images/` as needed.
+
+<hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
+
+### 📬 Contact
+
+Made with ❤️ by **Narasimha Royal**  
+[LinkedIn](https://www.linkedin.com/in/narasimha31)
+
