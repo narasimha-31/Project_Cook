@@ -81,7 +81,7 @@ http://localhost:5000
 
 | Home Page | 
 |-----------|
-| ![Home](static/images/home.png) | 
+| ![Home](static/images/Screenshot%202025-06-01%20135820.png) | 
 
 > 💡 Add more screenshots in `static/images/` as needed.
 
