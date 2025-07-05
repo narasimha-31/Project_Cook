@@ -72,6 +72,8 @@ python app.py
 
 # 5. Open in browser
 http://localhost:5000
+```  
+
 
 <hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
 
@@ -89,4 +91,3 @@ http://localhost:5000
 
 Made with ❤️ by **Narasimha Royal**  
 [LinkedIn](https://www.linkedin.com/in/narasimha31)
-
