@@ -1,84 +1,74 @@
-# 🍳 Cook With What You Have
+<h1 align="center">🍳 Cook With What You Have</h1>
 
-**Live Demo**: [🌐Click here to try it out](https://projectcook.pythonanywhere.com/)
+<p align="center">
+A smart recipe recommendation tool that helps you cook using ingredients already in your kitchen.
+</p>
 
----
+<hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
 
-## The Problem
-
-Ever opened your fridge and thought, *“What can I make with this?”*  
-This app solves that problem by helping users **instantly discover dishes** based on the ingredients they already have at home.
-
-Built using **Python**, **Flask**, **HTML/CSS**, and **JavaScript**, this recipe recommendation tool uses a cleaned dataset of 20,000+ recipes and a dynamic keyword-matching engine.
-
----
-
-## ⚙️ Key Features
-
-- 🔍 **Ingredient-Based Search** – Enter a few ingredients and get dish suggestions instantly
-- 🧠 **Smart Matching** – Python scripts extract & standardize keywords from ingredient lists
-- 🔢 **Recipe Sorting** – Results are ranked by **rating**, **relevance**, and **prep time**
-- 📊 **20,000+ Recipes** – Cleaned and transformed dataset with structured formatting
-- 🌐 **Live Hosted** – Deployed publicly on PythonAnywhere (see live demo above)
-
----
-
-## 🧑‍💻 What I Did??
-
-- **Cleaned and transformed** a raw dataset of 20,000+ recipes by removing irrelevant columns and formatting inconsistencies.
-- Wrote **custom Python scripts** to **extract keywords** from ingredient text and map them accurately for matching.
-- Designed a **Flask-based web app** to accept user input, filter recipes, and serve ranked suggestions.
-- Applied **sorting logic** by `rating`, `time`, and `relevance` to prioritize best results for the user.
-- Optimized the UX with **custom CSS styling**, responsive layout, and real-time input handling.
-
----
-
-## 🛠️ Technologies Used
-
-| Tool         | Usage                         |
-|--------------|-------------------------------|
-| Python       | Backend logic, keyword engine |
-| Flask        | Web server framework          |
-| Pandas       | Data cleaning, CSV parsing    |
-| HTML/CSS     | UI and layout styling         |
-| JavaScript   | Button actions and UI input   |
-| PythonAnywhere | Cloud hosting & deployment |
-
----
-
-##  Run Locally ?
-
-1. Clone this repo  
-   `git clone https://github.com/narasimha-31/Project_Cook.git`
-
-2. Create a virtual environment  
-   `python -m venv venv && source venv/bin/activate` (Linux/Mac)  
-   `venv\Scripts\activate` (Windows)
-
-3. Install dependencies  
-   `pip install -r requirements.txt`
-
-4. Run the app  
-   `python app.py`
-
-5. Open your browser:  
-   `http://localhost:5000`
-
----
-
-## 🖼️ Screenshot
-
-![Project UI](static/images/Screenshot%202025-06-01%20135820.png)
-
----
-
-## 🔗 Live Site Again
-
+### 🔗 Live Demo  
 👉 [Try the app here](https://projectcook.pythonanywhere.com/)
 
----
+<hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
 
-## 📬 Contact
+### 🧩 The Problem
 
-Made with ❤️ and passion by **Narasimha Royal**  
-[LinkedIn](https://www.linkedin.com/in/narasimha31)
+Ever opened your fridge and thought, *“What can I make with this?”*  
+This app helps you instantly discover recipes based on ingredients you already have.
+
+> Built using **Python**, **Flask**, and **a cleaned dataset of 20,000+ recipes**, this app uses dynamic keyword matching and relevance-based sorting.
+
+<hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
+
+### ⚙️ Features
+
+- 🔍 **Ingredient-Based Search** – Enter your available ingredients and get tailored recipes
+- 🧠 **Smart Matching** – Custom Python logic to extract, clean, and match keywords
+- 📊 **Sorted Suggestions** – Recipes ranked by rating, relevance, and prep time
+- 📚 **20K+ Recipes Dataset** – Structured and cleaned for accuracy
+- 🌐 **Deployed on PythonAnywhere** – Always accessible via live link
+
+<hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
+
+### 🧑‍💻 Contributions
+
+- Cleaned and standardized the dataset (~20,000 rows)  
+- Wrote backend logic to match ingredients with recipes  
+- Created a user-facing Flask web app  
+- Implemented dynamic sorting and styled responsive UI  
+- Hosted app live with cloud deployment (PythonAnywhere)
+
+<hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
+
+### 🛠 Tech Stack
+
+<div align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/PythonAnywhere-4584b6?style=for-the-badge" />
+</div>
+
+<hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
+
+### 📦 Run Locally
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/narasimha-31/Project_Cook.git
+
+# 2. Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the app
+python app.py
+
+# 5. Open in browser
+http://localhost:5000
