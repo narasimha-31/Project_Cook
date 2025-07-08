@@ -13,7 +13,7 @@ A smart recipe recommendation tool that helps you cook using ingredients already
 
 ### 🧩 The Problem
 
-Ever opened your fridge and thought, *“What can I make with this?”*  
+Ever opened your fridge and thought, *“What can I make with these items?”*  
 This app helps you instantly discover recipes based on ingredients you already have.
 
 > Built using **Python**, **Flask**, and **a cleaned dataset of 20,000+ recipes**, this app uses dynamic keyword matching and relevance-based sorting.
