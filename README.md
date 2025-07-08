@@ -1,7 +1,7 @@
 <h1 align="center">🍳 Cook With What You Have</h1>
 
 <p align="center">
-A smart recipe recommendation tool that helps you cook using ingredients already in your kitchen.
+A smart recipe recommendation tool that helps you cook using ingredients you already have in your kitchen.
 </p>
 
 <hr style="border: none; border-top: 1px solid #000; height: 1px; margin: 20px 0;" />
